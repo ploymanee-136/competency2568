@@ -1,0 +1,15 @@
+stages:
+  - build
+  - test
+
+build-job:
+  stage: build
+  script:
+    - echo "Building project..."
+    - docker --version
+
+test-job:
+  stage: test
+  script:
+    - echo "Running tests..."
+    - echo "CI/CD ทำงานสำเร็จ"
